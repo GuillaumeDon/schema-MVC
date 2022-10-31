@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteBase /cours/udemy/modele-mvc
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
